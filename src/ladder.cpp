@@ -88,8 +88,14 @@ void load_words(set<string> & word_list, const string & file_name)
 
 void print_word_ladder(const vector<string> & ladder)
 {
-    for (string word : ladder)
-        std::cout << word << " ";
+    if (ladder.empty()) 
+        std::cout << "No word ladder found.\n";
+    else{
+        std::cout << "Word ladder found: ";
+        for (string word : ladder)
+            std::cout << word << " ";
+        std::cout << "\n";
+    }
 }
 
 void verify_word_ladder()
