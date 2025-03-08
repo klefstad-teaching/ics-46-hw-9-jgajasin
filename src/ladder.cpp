@@ -74,7 +74,7 @@ vector<string> generate_word_ladder(const string & begin_word, const string & en
             }
         }
     }
-    return {};
+    return vector<string>();
 }
 
 void load_words(set<string> & word_list, const string & file_name)
@@ -90,7 +90,6 @@ void print_word_ladder(const vector<string> & ladder)
 {
     for (string word : ladder)
         std::cout << word << " ";
-    std::cout << "\n";
 }
 
 void verify_word_ladder()

@@ -45,5 +45,5 @@ void print_path(const vector<int> & v, int total)
     {
         std::cout << v[i] << " ";
     }
-    std::cout << "\nTotal cost: " << total << "\n";
+    std::cout << "\nTotal cost is " << total << "\n";
 }
