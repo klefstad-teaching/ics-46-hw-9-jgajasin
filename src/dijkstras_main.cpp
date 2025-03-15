@@ -6,12 +6,9 @@ int main()
     file_to_graph("src/small.txt", G);
 
     int source = 0;
-    
-    //std::cout << "1\n";
     vector<int> previous(G.numVertices, -1);
     vector<int> distances = dijkstra_shortest_path(G, source, previous);
 
-    //std::cout << "2\n"
     vector<int> shortest_path;
     int total_cost;
     for (int i = 0; i < G.numVertices; ++i){
@@ -19,7 +16,6 @@ int main()
         total_cost = distances[i];
         print_path(shortest_path, total_cost);
     }
-    //std::cout << "3\n";
     
     return 0;
 }
